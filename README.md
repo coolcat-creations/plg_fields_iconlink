@@ -10,4 +10,4 @@ In the additional field parameters you can choose the target, the icon-class wit
 Apply your own css by adding a render class in the options tab of the field settings.
 
 ## Field params:
-![Alt text](https://imgur.com/a/x4OdZ.gif)
+![Fieldparams](/fieldparams.gif)
