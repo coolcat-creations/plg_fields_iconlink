@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams"
+		          addfieldpath="/plugins/fields/iconlink/params/fields">
+
+
+			<field name="iconclass"
+			       type="Iconclass"
+			       default="fa fa-link"
+			       label="PLG_ICONLINK_ICON"
+			       filter="cmd"
+			/>
+
+			<field
+					name="target"
+					type="list"
+					label="PLG_FIELDS_ICONLINK_TARGET_LABEL"
+					default="_blank"
+			>
+				<option value="_blank">Blank</option>
+				<option value="_self">Self</option>
+				<option value="_parent">Parent</option>
+				<option value="_top">Top</option>
+
+			</field>
+
+			<field
+					name="iconsize"
+					type="list"
+					label="PLG_FIELDS_ICONLINK_ICONSIZE"
+					default=""
+			>
+				<option value="">PLG_FIELDS_ICONLINK_ICONSIZE_REGULAR</option>
+				<option value="fa-lg">PLG_FIELDS_ICONLINK_ICONSIZE_LARGE</option>
+				<option value="fa-2x">2x</option>
+				<option value="fa-3x">3x</option>
+				<option value="fa-4x">4x</option>
+				<option value="fa-5x">5x</option>
+
+			</field>
+
+			<field
+					name="showurl"
+					type="list"
+					label="PLG_FIELDS_ICONLINK_SHOWURL"
+					default="0"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+
+			</field>
+
+
+			<field
+					name="schemes"
+					type="list"
+					label="PLG_FIELDS_URL_PARAMS_SCHEMES_LABEL"
+					description="PLG_FIELDS_URL_PARAMS_SCHEMES_DESC"
+					multiple="true"
+			>
+				<option value="http">HTTP</option>
+				<option value="https">HTTPS</option>
+				<option value="ftp">FTP</option>
+				<option value="ftps">FTPS</option>
+				<option value="url">URL</option>
+				<option value="file">FILE</option>
+				<option value="mailto">MAILTO</option>
+			</field>
+
+			<field
+					name="relative"
+					type="list"
+					label="PLG_FIELDS_URL_PARAMS_RELATIVE_LABEL"
+					description="PLG_FIELDS_URL_PARAMS_RELATIVE_DESC"
+			>
+				<option value="">COM_FIELDS_FIELD_USE_GLOBAL</option>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

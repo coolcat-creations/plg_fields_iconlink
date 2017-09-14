@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.7.0" group="fields" method="upgrade">
+	<name>plg_fields_iconlink</name>
+	<author>Elisa Foltyn, coolcat-creations.com</author>
+	<creationDate>September 2017</creationDate>
+	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.7.0</version>
+	<description>PLG_FIELDS_ICONLINK_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="iconlink">iconlink.php</filename>
+		<folder>language</folder>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_fields_iconlink.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_fields_iconlink.ini</language>
+	</languages>
+
+	<media destination="plg_fields_iconlink" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic"
+			          addfieldpath="/plugins/fields/iconlink/params/fields" >
+
+				<field
+					name="schemes"
+					type="list"
+					label="PLG_FIELDS_ICONLINK_PARAMS_SCHEMES_LABEL"
+					description="PLG_FIELDS_ICONLINK_PARAMS_SCHEMES_DESC"
+					multiple="true"
+					>
+					<option value="http">HTTP</option>
+					<option value="https">HTTPS</option>
+					<option value="ftp">FTP</option>
+					<option value="ftps">FTPS</option>
+					<option value="url">URL</option>
+					<option value="file">FILE</option>
+					<option value="mailto">MAILTO</option>
+				</field>
+	
+				<field
+					name="relative"
+					type="radio"
+					label="PLG_FIELDS_ICONLINK_PARAMS_RELATIVE_LABEL"
+					description="PLG_FIELDS_ICONLINK_PARAMS_RELATIVE_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="iconleft"
+				       type="Iconclass"
+				       default="fa-chevron-left"
+				       label="PLG_ICONLINK_ICON_LEFT"
+				       filter="cmd"
+				/>
+
+
+				<field name="iconright"
+				       type="Iconclass"
+				       default="fa-chevron-right"
+				       label="PLG_ICONLINK_ICON_RIGHT"
+				       filter="cmd"
+				/>
+
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
