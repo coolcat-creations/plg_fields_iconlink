@@ -14,8 +14,8 @@ class JFormFieldIconclass extends JFormField {
 	public function getInput()
 	{
 		/*making sure jQuery is loaded first */
-		JHtml::_('jQuery.Framework');
-		JHtml::_('bootstrap.Framework');
+		JHtml::_('jquery.framework');
+		JHtml::_('bootstrap.framework');
 
 		JHtml::_('stylesheet', '/media/plg_fields_iconlink/css/bootstrap-iconpicker.css');
 		JHtml::_('stylesheet', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -51,7 +51,7 @@ class JFormFieldIconclass extends JFormField {
 			    labelFooter: '" . JText::sprintf( 'PLG_FIELDS_ICONLINK_ICONSINDEX', '{0}', '{1}', '{2}' ) . "',
 			    placement: 'bottom', 
 			    search: true,
-			    searchText: '". JTEXT::_('PLG_FIELDS_ICONLINK_SEARCHTEXT') . "',
+			    searchText: '". JText::_('PLG_FIELDS_ICONLINK_SEARCHTEXT') . "',
 			    selectedClass: 'btn-primary',
 			    unselectedClass: 'btn-default',
 			    iconClass: 'fontawesome',
