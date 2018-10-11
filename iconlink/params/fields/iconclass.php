@@ -17,12 +17,12 @@ class JFormFieldIconclass extends JFormField {
 		JHtml::_('jquery.framework');
 		JHtml::_('bootstrap.framework');
 
-		JHtml::_('stylesheet', '/media/plg_fields_iconlink/css/bootstrap-iconpicker.css');
+		JHtml::_('stylesheet', 'media/plg_fields_iconlink/css/bootstrap-iconpicker.css');
 		JHtml::_('stylesheet', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-		JHtml::_('script', '/media/plg_fields_iconlink/js/bootstrap-iconpicker-iconset-all.js');
-		JHtml::_('script', '/media/plg_fields_iconlink/js/bootstrap-iconpicker.js');
+		JHtml::_('script', 'media/plg_fields_iconlink/js/bootstrap-iconpicker-iconset-all.js');
+		JHtml::_('script', 'media/plg_fields_iconlink/js/bootstrap-iconpicker.js');
 
 
 		$plugin = JPluginHelper::getPlugin('fields', 'iconlink');
