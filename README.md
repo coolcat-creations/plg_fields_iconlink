@@ -1,5 +1,5 @@
 # plg_fields_iconlink
-Joomla! Custom Fields Plugin to display an url with a Font Awesome icon.
+Joomla! Custom Fields Plugin to display an url with a Font Awesome icon. (For Joomla 3)
 
 ## Custom Fields Plugin
 works for templates that use font awesome 4 fonts
